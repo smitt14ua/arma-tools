@@ -1,6 +1,6 @@
 private _code = _this;
 
-// Remove all spaces ib code
+// Remove all spaces in code
 _code = (_code splitString " ") joinString "";
 
 if (_code isEqualTo "") exitWith {

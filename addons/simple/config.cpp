@@ -17,7 +17,7 @@ class CfgFunctions
 	{
 		class main
 		{
-			file="st\simple\functions";
+			file="\smith\tools\simple\functions";
 			class convertAll;
 			class convertBase;
 			class convertExcludeSelected;
@@ -45,7 +45,7 @@ class display3DEN
 			};
 			class st_simple_folder
 			{
-				picture="st\common\ui\icon_ca.paa";
+				picture="\smith\tools\common\ui\icon_ca.paa";
 				conditionShow="(hoverObject + selectedObject) * (1 - hoverGroup) * (1 - hoverTrigger) * (1 - hoverWaypoint) * (1 - hoverLogic) * (1 - hoverMarker) * (1 - hoverLayer) * (1 - selectedWaypoint) * (1 - selectedLogic) * (1 - selectedMarker)";
 				text="$STR_st_simple_contextFolder";
 				value=0;
@@ -85,7 +85,7 @@ class display3DEN
 				class st_simple_folder
 				{
 					text="$STR_st_simple_folder";
-					picture="st\common\ui\icon_ca.paa";
+					picture="\smith\tools\common\ui\icon_ca.paa";
 					items[]=
 					{
 						"st_simple_convertAll",
