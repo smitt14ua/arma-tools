@@ -7,6 +7,6 @@
 
 [
     GVAR(unitMarkers_showRole),
-    GVAR(unitMarkers_alpha),
-    GVAR(unitMarkers_showGroup)
+    GVAR(unitMarkers_showGroup),
+    GVAR(unitMarkers_alpha)
 ] call FUNC(addUnitMarkers)
