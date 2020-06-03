@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 /* ----------------------------------------------------------------------------
-    Базовая функция для перевода объектов в простые..
+    Базовая функция для перевода объектов в простые.
 ---------------------------------------------------------------------------- */
 
 params ["_objects"];
@@ -15,7 +15,8 @@ private _count = count _objects;
     private _vectorDir = vectorDir _x;
     private _vectorUp = vectorUp _x;
 
-    _code = _code + [
+    _code = [
+        _code,
         "// ", typeOf _x, endl,
         "_temp = createSimpleObject [", str _modelPath, ", ", _position, ", true];", endl, 
         "_temp setVectorDirAndUp [", _vectorDir, ", ", _vectorUp, "];", endl

@@ -1,9 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="Tools">
     <Package name="Briefing">
-        <Key ID="STR_Tools_Briefing_Key">
+        <Key ID="STR_Tools_Briefing_">
             <English>Value</English>
             <Russian>Значение</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_DiaryDisplayName">
+            <English>Tools</English>
+            <Russian>Инструменты</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_DiaryMarkersDisplayName">
+            <English>Markers</English>
+            <Russian>Маркеры</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_ShowHide">
+            <English>Show / hide</English>
+            <Russian>Показать / спрятать</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_Units">
+            <English>Units</English>
+            <Russian>Юниты</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_Groups">
+            <English>Groups</English>
+            <Russian>Группы</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_Vehicles">
+            <English>Vehicles</English>
+            <Russian>Техника</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_Buildings">
+            <English>Buildings</English>
+            <Russian>Постройки</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_Show">
+            <English>Show</English>
+            <Russian>Показать</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_Hide">
+            <English>Hide</English>
+            <Russian>Спрятать</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_UnitRoleDesc">
+            <English>Unit role description</English>
+            <Russian>Описание роли юнита</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_UnitOpacity">
+            <English>Opacity</English>
+            <Russian>Непрозрачность</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_Full">
+            <English>Full</English>
+            <Russian>Полная</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_Half">
+            <English>Half</English>
+            <Russian>Половина</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_Visibility">
+            <English>Visibility</English>
+            <Russian>Видимость</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_UnitGroupName">
+            <English>Group name</English>
+            <Russian>Название группы</Russian>
         </Key>
     </Package>
 </Project>

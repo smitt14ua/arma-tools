@@ -67,7 +67,7 @@ def main():
             print("  Пропуск " + p)
             continue
 
-        print("# Сборка " + p + "... ", end = "")
+        print("# Сборка " + p + " ...")
 
         cmd = [
             "makepbo",
@@ -81,10 +81,10 @@ def main():
             subprocess.check_output(cmd, stderr=subprocess.STDOUT)
         except:
             failed += 1
-            print("Ошибка сборки")
+            print("  Ошибка сборки " + p)
         else:
             made += 1
-            print("Успешно собрано")
+            print("  Успешно собрано " + p)
 
     print("\n# Сборка окончена")
     print("  Собрано {}, пропущено {}, удалено {}, неудачно {} ".format(

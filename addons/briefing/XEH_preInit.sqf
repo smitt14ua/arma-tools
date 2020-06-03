@@ -6,8 +6,6 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-if (hasInterface) then {
-    player createDiarySubject [LELSTRING(main,name)];
-};
+GVAR(unitMarkers) = [];
 
 ADDON = true;

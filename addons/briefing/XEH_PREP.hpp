@@ -1,3 +1,4 @@
-// PREP(funcName);
 PREP(addUnitMarkers);
+PREP(addUnitMarkersSettings);
 PREP(deleteUnitMarkers);
+PREP(getMarkersRecordText);
