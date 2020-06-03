@@ -9,13 +9,9 @@
             <English>Convert all</English>
             <Russian>Конвертировать всё</Russian>
         </Key>
-        <Key ID="STR_Tools_Simple_СonvertSelected">
+        <Key ID="STR_Tools_Simple_ConvertSelected">
             <English>Convert selected</English>
             <Russian>Конвертировать выделенные</Russian>
-        </Key>
-        <Key ID="STR_Tools_Simple_СonvertAllButSelected">
-            <English>Convert all but selected</English>
-            <Russian>Конвертировать всё, кроме выделенных</Russian>
         </Key>
         <Key ID="STR_Tools_Simple_CopyConversions">
             <English>Copy all conversions</English>
@@ -60,6 +56,10 @@
         <Key ID="STR_Tools_Simple_ConvertedNoObjects">
             <English>No objects to convert.</English>
             <Russian>Не найдено объектов для конвертации.</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_ConvertAllButSelected">
+            <English>Convert all but selected</English>
+            <Russian>Конвертировать всё, кроме выделенных</Russian>
         </Key>
     </Package>
 </Project>
