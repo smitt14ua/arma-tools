@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Tools">
+    <Package name="Main">
+        <Key ID="STR_Tools_Main_Author">
+            <English>Smith</English>
+            <Czech>Smith</Czech>
+            <French>Smith</French>
+            <German>Smith</German>
+            <Italian>Smith</Italian>
+            <Polish>Smith</Polish>
+            <Portuguese>Smith</Portuguese>
+            <Russian>Smith</Russian>
+            <Spanish>Smith</Spanish>
+            <Korean>Smith</Korean>
+            <Japanese>Smith</Japanese>
+            <Chinesesimp>Smith</Chinesesimp>
+            <Chinese>Smith</Chinese>
+        </Key>
+        <Key ID="STR_Tools_Main_Name">
+            <English>Smith's tools</English>
+            <Russian>Инструмента Смита</Russian>
+        </Key>
+        <Key ID="STR_Tools_Main_Description">
+            <English>Tools for working with the 3DEN editor and planning.</English>
+            <Russian>Инструменты для работы с 3DEN редактором и брифингом.</Russian>
+        </Key>
+    </Package>
+</Project>

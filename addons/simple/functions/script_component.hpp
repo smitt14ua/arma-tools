@@ -1,0 +1,1 @@
+#include "\s\tools\addons\simple\script_component.hpp"

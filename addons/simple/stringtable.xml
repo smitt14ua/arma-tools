@@ -1,121 +1,65 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Project name="Smith's tools">
-	<Package name="Simple">
-		<Container name="ContextMenu">
-			<Key ID="STR_st_simple_contextFolder">
-				<Original>Convert to simple local</Original>
-				<Russian>Конвертировать в простые локальные</Russian>
-			</Key>
-			<Key ID="STR_st_simple_contextThis">
-				<Original>This object</Original>
-				<Russian>Этот объект</Russian>
-			</Key>
-			<Key ID="STR_st_simple_contextSelected">
-				<Original>Selected</Original>
-				<Russian>Выделенные</Russian>
-			</Key>
-		</Container>
-		<Container name="Menu">
-            <Key ID="STR_st_simple_folder">
-				<Original>Convert to simple local</Original>
-				<Russian>Конвертировать в простые локальные</Russian>
-			</Key>
-			<Key ID="STR_st_simple_all">
-				<Original>All static</Original>
-				<Russian>Все статические</Russian>
-			</Key>
-            <Key ID="STR_st_simple_selected">
-				<Original>Only selected</Original>
-				<Russian>Только выделенные</Russian>
-			</Key>
-            <Key ID="STR_st_simple_excludeSelected">
-				<Original>All static exclude selected</Original>
-				<Russian>Все статические, кроме выделенных</Russian>
-			</Key>
-            <Key ID="STR_st_simple_copyToClipboard">
-				<Original>Copy to clipboard last convertation</Original>
-				<Russian>Скопировать в буфер обмена последнюю конвертацию</Russian>
-			</Key>
-			<Key ID="STR_st_simple_copyToClipboardAll">
-				<Original>Copy to clipboard all convertations</Original>
-				<Russian>Скопировать в буфер обмена все конвертации</Russian>
-			</Key>
-			<Key ID="STR_st_simple_clearHistory">
-				<Original>Clear history of convertations</Original>
-				<Russian>Очистить историю конвертацию</Russian>
-			</Key>
-			<Key ID="STR_st_simple_createFromCode">
-				<Original>Create objects from code</Original>
-				<Russian>Создать объекты из кода</Russian>
-			</Key>
-		</Container>
-		<Container name="Hints">
-			<Key ID="STR_st_simple_lastConvertNotFound">
-				<Original>Last convertation not found!</Original>
-				<Russian>Последней конвертации не найдено!</Russian>
-			</Key>
-			<Key ID="STR_st_simple_lastConvertHasBeenCopied">
-				<Original>Check your clipboard. Last convertation has been copied</Original>
-				<Russian>Проверьте Ваш буфер обмена. Последняя конвертация была скопирована</Russian>
-			</Key>
-			<Key ID="STR_st_simple_convertHistoryNotFound">
-				<Original>History of convertations not found!</Original>
-				<Russian>История конвертаций не найдена!</Russian>
-			</Key>
-			<Key ID="STR_st_simple_historyHasBeenCleared">
-				<Original>History of convertations has been cleared</Original>
-				<Russian>История конвертаций была очищена</Russian>
-			</Key>
-			<Key ID="STR_st_simple_historyHasBeenCopied">
-				<Original>Check your clipboard. History of convertations has been copied</Original>
-				<Russian>Проверьте Ваш буфер обмена. История конвертаций была скопирована</Russian>
-			</Key>
-			<Key ID="STR_st_simple_noConvertedObjects">
-				<Original>No converted objects!</Original>
-				<Russian>Нет конвертированных объектов!</Russian>
-			</Key>
-			<Key ID="STR_st_simple_countOfConvertedObjects_f">
-				<Original>Check your clipboard. Converted objects: %1</Original>
-				<Russian>Проверьте Ваш буфер обмена. Сконвертировано объектов: %1</Russian>
-			</Key>
-			<Key ID="STR_st_simple_noCreatedObjects">
-				<Original>No created objects!</Original>
-				<Russian>Нет созданных объектов!</Russian>
-			</Key>
-			<Key ID="STR_st_simple_countOfCreatedObjects_f">
-				<Original>Created objects: %1</Original>
-				<Russian>Создано объектов: %1</Russian>
-			</Key>
-		</Container>
-		<Container name="Dialog">
-			<Key ID="STR_st_simple_pasteCodeHere">
-				<Original>Paste your code here</Original>
-				<Russian>Вставьте здесь ваш код</Russian>
-			</Key>
-			<Key ID="STR_st_simple_create">
-				<Original>Create</Original>
-				<Russian>Создать</Russian>
-			</Key>
-		</Container>
-		<Container name="DialogErrors">
-			<Key ID="STR_st_simple_unknownError">
-				<Original>Unknown error</Original>
-				<Russian>Неизвестная ошибка</Russian>
-			</Key>
-			<Key ID="STR_st_simple_invalidCode">
-				<Original>Invalid code</Original>
-				<Russian>Неправильный код</Russian>
-			</Key>
-			<Key ID="STR_st_simple_invalidCodeAt_f">
-				<Original>Invalid code at: %1</Original>
-				<Russian>Неправильный код на: %1</Russian>
-			</Key>
-		</Container>
-		<Container name="String">
-			<Key ID="STR_st_simple_layerName">
-				<Original>Converted</Original>
-				<Russian>Конвертировано</Russian>
-			</Key>
-		</Container>
-	</Package>
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Tools">
+    <Package name="Simple">
+        <Key ID="STR_Tools_Simple_">
+            <English>Value</English>
+            <Russian>Значение</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_ConvertAll">
+            <English>Convert all</English>
+            <Russian>Конвертировать всё</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_СonvertSelected">
+            <English>Convert selected</English>
+            <Russian>Конвертировать выделенные</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_СonvertAllButSelected">
+            <English>Convert all but selected</English>
+            <Russian>Конвертировать всё, кроме выделенных</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_CopyConversions">
+            <English>Copy all conversions</English>
+            <Russian>Копировать все конвертации</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_CopyConversionLatest">
+            <English>Copy latest conversion</English>
+            <Russian>Копировать последнюю конвертацию</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_MenuDisplayName">
+            <English>Convert to simple</English>
+            <Russian>Конвертировать в простые</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_ContextMenuDisplayName">
+            <English>Convert to simple</English>
+            <Russian>Конвертировать в простые</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_ConvertedX">
+            <English>Successfully converted objects: %1. The code is written to the clipboard.</English>
+            <Russian>Успешно конвертировано объектов: %1. Код записан в буфер обмена.</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_ConversionsCleared">
+            <English>Conversion history cleared successfully.</English>
+            <Russian>История конвертаций успешно очищена.</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_WarningBeforeConvert">
+            <English>Are you sure you want to convert these objects? They will be deleted from the editor, but will be available on the clipboard as code. I recommend making a backup.</English>
+            <Russian>Вы уверены, что хотите конвертировать эти объекты? Они удалятся из редактора, но будут доступны в буфере обмена в виде кода. Рекомендую сделать резервное сохранение.</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_ClearConversions">
+            <English>Clear conversion history</English>
+            <Russian>Очистить историю</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_WarningBeforeClearConversions">
+            <English>Are you sure you want to clear conversion history? This action is irreversible.</English>
+            <Russian>Вы уверены, что хотите очистить историю конвертаций? Это действие невозвратимое.</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_Copied">
+            <English>The code was successfully copied to the clipboard.</English>
+            <Russian>Код успешно скопирован в буфер обмена.</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_ConvertedNoObjects">
+            <English>No objects to convert.</English>
+            <Russian>Не найдено объектов для конвертации.</Russian>
+        </Key>
+    </Package>
 </Project>

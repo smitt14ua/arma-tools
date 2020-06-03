@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Tools">
+    <Package name="Briefing">
+        <Key ID="STR_Tools_Briefing_Key">
+            <English>Value</English>
+            <Russian>Значение</Russian>
+        </Key>
+    </Package>
+</Project>

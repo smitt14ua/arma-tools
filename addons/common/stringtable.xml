@@ -1,15 +1,17 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Project name="Smith's tools">
-	<Package name="Common">
-		<Container name="Base">
-			<Key ID="STR_st_common_name">
-				<Original>Smith's tools</Original>
-				<Russian>Инструменты Smith'а</Russian>
-			</Key>
-			<Key ID="STR_st_common_description">
-				<Original>Tools for working with the 3DEN editor and planning</Original>
-				<Russian>Инструменты для работы с 3DEN редактором и брифингом.</Russian>
-			</Key>
-		</Container>
-	</Package>
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Tools">
+    <Package name="Common">
+        <Key ID="STR_Tools_Common_">
+            <English>Value</English>
+            <Russian>Значение</Russian>
+        </Key>
+        <Key ID="STR_Tools_Common_Yes">
+            <English>Yes</English>
+            <Russian>Да</Russian>
+        </Key>
+        <Key ID="STR_Tools_Common_No">
+            <English>No</English>
+            <Russian>Нет</Russian>
+        </Key>
+    </Package>
 </Project>

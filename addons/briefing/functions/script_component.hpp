@@ -1,0 +1,1 @@
+#include "\s\tools\addons\briefing\script_component.hpp"

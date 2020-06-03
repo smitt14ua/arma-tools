@@ -7,7 +7,7 @@ import subprocess
 if sys.platform == "win32":
     import winreg
 
-MAINPREFIX = "smith"
+MAINPREFIX = "s"
 PREFIX = "tools_"
 
 
@@ -67,12 +67,12 @@ def main():
             print("  Пропуск " + p)
             continue
 
-        print("# Сборка " + p)
+        print("# Сборка " + p + "... ", end = "")
 
         cmd = [
             "makepbo",
             "-NUP",
-            "-@={}\\{}\\{}".format(MAINPREFIX, PREFIX.rstrip("_"), p),
+            "-@={}\\{}\\addons\\{}".format(MAINPREFIX, PREFIX.rstrip("_"), p),
             p,
             "{}{}.pbo".format(PREFIX, p)
         ]
@@ -81,10 +81,10 @@ def main():
             subprocess.check_output(cmd, stderr=subprocess.STDOUT)
         except:
             failed += 1
-            print("  Ошибка сборки " + p)
+            print("Ошибка сборки")
         else:
             made += 1
-            print("  Успешно собрано " + p)
+            print("Успешно собрано")
 
     print("\n# Сборка окончена")
     print("  Собрано {}, пропущено {}, удалено {}, неудачно {} ".format(

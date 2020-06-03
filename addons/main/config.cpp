@@ -6,13 +6,9 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {QUOTE(MAIN_ADDON)};
-        author = ECSTRING(main,author);
+        requiredAddons[] = {"cba_main"};
+        author = CSTRING(author);
         authors[] = {"Smith"};
         VERSION_CONFIG;
     };
 };
-
-#include "CfgEventHandlers.hpp"
-#include "Display3DEN.hpp"
-// #include "Dialog.hpp"
