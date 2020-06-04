@@ -26,16 +26,16 @@ ISNILS(GVAR(unitMarkers),[]);
     // Выбираем цвет в зависимости от стороны
     switch (side _x) do {
         case west: {
-            _marker setMarkerColorLocal "colorBLUFOR";
+            _marker setMarkerColorLocal "ColorWEST";
         };
         case east: {
-            _marker setMarkerColorLocal "colorOPFOR";
+            _marker setMarkerColorLocal "ColorEAST";
         };
         case resistance: {
-            _marker setMarkerColorLocal "colorIndependent";
+            _marker setMarkerColorLocal "ColorGUER";
         };
         case civilian: {
-            _marker setMarkerColorLocal "colorCivilian";
+            _marker setMarkerColorLocal "ColorCIV";
         };
         default {
             _marker setMarkerColorLocal "ColorUNKNOWN";

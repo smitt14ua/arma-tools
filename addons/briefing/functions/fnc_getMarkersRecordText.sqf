@@ -14,6 +14,9 @@ ISNILS(GVAR(groupMarkers_showName),true);
 ISNILS(GVAR(groupMarkers_showCount),true);
 ISNILS(GVAR(groupMarkers_alpha),1);
 
+ISNILS(GVAR(vehicleMarkers_showName),true);
+ISNILS(GVAR(vehicleMarkers_alpha),1);
+
 private _xml = "";
 
 // Юниты
@@ -215,6 +218,82 @@ if (IS_EMPTY(GVAR(groupMarkers))) then {
     _xml = _xml + format [
         "<execute expression='[] call %1; [""%2""] call CBA_fnc_localEvent;'>%3</execute><br/>",
         QFUNC(deleteGroupMarkers),
+        QGVAR(updateMarkersDiary),
+        LLSTRING(Hide)
+    ];
+};
+
+// Техника
+
+_xml = _xml + "<font size=16>" + LLSTRING(Vehicles) + "</font><br/>";
+
+// Показывать название (техники)
+
+_xml = _xml + format ["<font color='#99cccc'>%1</font>: ", LLSTRING(VehicleName)];
+
+if (GVAR(vehicleMarkers_showName)) then {
+    _xml = _xml + format [
+        "<execute expression='%1 = false; %2[""%3""] call CBA_fnc_localEvent;'>%4</execute><br/>",
+        QGVAR(vehicleMarkers_showName),
+        (if (IS_EMPTY(GVAR(VehicleMarkers))) then {""} else {
+            format ["[] call %1;", QFUNC(addVehicleMarkersSettings)]
+        }),
+        QGVAR(updateMarkersDiary),
+        LLSTRING(Hide)
+    ];
+} else {
+    _xml = _xml + format [
+        "<execute expression='%1 = true; %2[""%3""] call CBA_fnc_localEvent;'>%4</execute><br/>",
+        QGVAR(vehicleMarkers_showName),
+        (if (IS_EMPTY(GVAR(VehicleMarkers))) then {""} else {
+            format ["[] call %1;", QFUNC(addVehicleMarkersSettings)]
+        }),
+        QGVAR(updateMarkersDiary),
+        LLSTRING(Show)
+    ];
+};
+
+// Прозрачность (техники)
+
+_xml = _xml + format ["<font color='#99cccc'>%1</font>: ", LLSTRING(Opacity)];
+
+if (GVAR(vehicleMarkers_alpha) > 0.4) then {
+    _xml = _xml + format [
+        "<execute expression='%1 = 0.4; %2[""%3""] call CBA_fnc_localEvent;'>%4</execute><br/>",
+        QGVAR(vehicleMarkers_alpha),
+        (if (IS_EMPTY(GVAR(VehicleMarkers))) then {""} else {
+            format ["[] call %1;", QFUNC(addVehicleMarkersSettings)]
+        }),
+        QGVAR(updateMarkersDiary),
+        LLSTRING(Half)
+    ];
+} else {
+    _xml = _xml + format [
+        "<execute expression='%1 = 1; %2[""%3""] call CBA_fnc_localEvent;'>%4</execute><br/>",
+        QGVAR(vehicleMarkers_alpha),
+        (if (IS_EMPTY(GVAR(VehicleMarkers))) then {""} else {
+            format ["[] call %1;", QFUNC(addVehicleMarkersSettings)]
+        }),
+        QGVAR(updateMarkersDiary),
+        LLSTRING(Full)
+    ];
+};
+
+// Переключить видимость (техники)
+
+_xml = _xml + format ["<font color='#99cccc'>%1</font>: ", LLSTRING(Visibility)];
+
+if (IS_EMPTY(GVAR(VehicleMarkers))) then {
+    _xml = _xml + format [
+        "<execute expression='[] call %1; [""%2""] call CBA_fnc_localEvent;'>%3</execute><br/>",
+        QFUNC(addVehicleMarkersSettings),
+        QGVAR(updateMarkersDiary),
+        LLSTRING(Show)
+    ];
+} else {
+    _xml = _xml + format [
+        "<execute expression='[] call %1; [""%2""] call CBA_fnc_localEvent;'>%3</execute><br/>",
+        QFUNC(deleteVehicleMarkers),
         QGVAR(updateMarkersDiary),
         LLSTRING(Hide)
     ];

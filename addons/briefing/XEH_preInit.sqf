@@ -8,5 +8,6 @@ PREP_RECOMPILE_END;
 
 GVAR(unitMarkers) = [];
 GVAR(groupMarkers) = [];
+GVAR(vehicleMarkers) = [];
 
 ADDON = true;

@@ -4,7 +4,7 @@
     Удалить маркера на юнитов.
 ---------------------------------------------------------------------------- */
 
-if (isNil QGVAR(unitMarkers) || {GVAR(unitMarkers) isEqualTo []}) exitWith {};
+if (isNil QGVAR(unitMarkers) || {IS_EMPTY(GVAR(unitMarkers))) exitWith {};
 
 {deleteMarker _x} forEach GVAR(unitMarkers);
 
