@@ -45,10 +45,6 @@
             <English>Unit role description</English>
             <Russian>Описание роли юнита</Russian>
         </Key>
-        <Key ID="STR_Tools_Briefing_UnitOpacity">
-            <English>Opacity</English>
-            <Russian>Непрозрачность</Russian>
-        </Key>
         <Key ID="STR_Tools_Briefing_Full">
             <English>Full</English>
             <Russian>Полная</Russian>
@@ -61,9 +57,17 @@
             <English>Visibility</English>
             <Russian>Видимость</Russian>
         </Key>
-        <Key ID="STR_Tools_Briefing_UnitGroupName">
+        <Key ID="STR_Tools_Briefing_Opacity">
+            <English>Opacity</English>
+            <Russian>Непрозрачность</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_GroupName">
             <English>Group name</English>
             <Russian>Название группы</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_UnitsCount">
+            <English>Units count</English>
+            <Russian>Количество юнитов</Russian>
         </Key>
     </Package>
 </Project>

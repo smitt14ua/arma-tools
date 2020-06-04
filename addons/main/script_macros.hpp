@@ -12,6 +12,8 @@
 #define USETVAR(varName,value) SETVAR_SYS(uiNamespace,varName,value)
 #define PSETVAR(varName,value) SETVAR_SYS(profileNamespace,varName,value)
 
+#define IS_EMPTY(varName) (varName isEqualTo [])
+
 #ifdef DISABLE_COMPILE_CACHE
     #undef PREP
     #define PREP(fncName) DFUNC(fncName) = compile preprocessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName).sqf)

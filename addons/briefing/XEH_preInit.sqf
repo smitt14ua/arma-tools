@@ -7,5 +7,6 @@ PREP_RECOMPILE_START;
 PREP_RECOMPILE_END;
 
 GVAR(unitMarkers) = [];
+GVAR(groupMarkers) = [];
 
 ADDON = true;
