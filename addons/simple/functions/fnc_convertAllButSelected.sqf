@@ -10,8 +10,18 @@
     [
         LELSTRING(Common,Yes),
         {
-            private _objects = allMissionObjects "Static";
-            _objects append allMissionObjects "Thing";
+            private _objects = [];
+            {
+                if (
+                    _x isKindOf "Building"
+                    || {
+                        _x isKindOf "Thing"
+                        && {"Ammo" != getText (configFile >> "CfgVehicles" >> typeOf _x >> "vehicleClass")}
+                    }
+                ) then {
+                    _objects pushBack _x;
+                }
+            } forEach (all3DENEntities select 0);
             _objects = _objects - (get3DENSelected "object");
             [_objects] call FUNC(convert);
         }

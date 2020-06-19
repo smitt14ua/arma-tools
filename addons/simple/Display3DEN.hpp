@@ -39,7 +39,8 @@ class Display3DEN {
                         QGVAR(convertAllButSelected),
                         QGVAR(copyConversions),
                         QGVAR(copyConversionLatest),
-                        QGVAR(clearConversions)
+                        QGVAR(clearConversions),
+                        QGVAR(createFromClipboad)
                     };
                 };
                 class GVAR(convertAll) {
@@ -65,6 +66,10 @@ class Display3DEN {
                 class GVAR(clearConversions) {
                     text = CSTRING(ClearConversions);
                     action = QUOTE(call FUNC(clearConversions));
+                };
+                class GVAR(createFromClipboad) {
+                    text = CSTRING(CreateFromClipboad);
+                    action = QUOTE(call FUNC(createEntitiesMessage));
                 };
             };
         };

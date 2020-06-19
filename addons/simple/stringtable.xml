@@ -30,12 +30,12 @@
             <Russian>Конвертировать в простые</Russian>
         </Key>
         <Key ID="STR_Tools_Simple_ConvertedX">
-            <English>Successfully converted objects: %1. The code is written to the clipboard.</English>
-            <Russian>Успешно конвертировано объектов: %1. Код записан в буфер обмена.</Russian>
+            <English>Successfully converted objects: %1. The code is written to the clipboard</English>
+            <Russian>Успешно конвертировано объектов: %1. Код записан в буфер обмена</Russian>
         </Key>
         <Key ID="STR_Tools_Simple_ConversionsCleared">
-            <English>Conversion history cleared successfully.</English>
-            <Russian>История конвертаций успешно очищена.</Russian>
+            <English>Conversion history cleared successfully</English>
+            <Russian>История конвертаций успешно очищена</Russian>
         </Key>
         <Key ID="STR_Tools_Simple_WarningBeforeConvert">
             <English>Are you sure you want to convert these objects? They will be deleted from the editor, but will be available on the clipboard as code. I recommend making a backup.</English>
@@ -50,16 +50,36 @@
             <Russian>Вы уверены, что хотите очистить историю конвертаций? Это действие невозвратимое.</Russian>
         </Key>
         <Key ID="STR_Tools_Simple_Copied">
-            <English>The code was successfully copied to the clipboard.</English>
-            <Russian>Код успешно скопирован в буфер обмена.</Russian>
+            <English>The code was successfully copied to the clipboard</English>
+            <Russian>Код успешно скопирован в буфер обмена</Russian>
         </Key>
         <Key ID="STR_Tools_Simple_ConvertedNoObjects">
             <English>No objects to convert.</English>
-            <Russian>Не найдено объектов для конвертации.</Russian>
+            <Russian>Не найдено объектов для конвертации</Russian>
         </Key>
         <Key ID="STR_Tools_Simple_ConvertAllButSelected">
             <English>Convert all but selected</English>
             <Russian>Конвертировать всё, кроме выделенных</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_CreateFromClipboad">
+            <English>Create objects from code</English>
+            <Russian>Создать объекты из кода</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_WarningBeforeCreating">
+            <English>Are you sure you want to create objects from code in clipboad?</English>
+            <Russian>Вы уверены, что хотите создать объекты из кода из буфера обмена?</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_CreatedX">
+            <English>Created objects: %1. Created objects are moved to a new layer</English>
+            <Russian>Создано объектов: %1. Созданные объекты перемещены на новый слой</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_CreatedNoObjects">
+            <English>No objects to create. Please check your code.</English>
+            <Russian>Не найдено объектов для создания. Пожалуйста, проверьте Ваш код</Russian>
+        </Key>
+        <Key ID="STR_Tools_Simple_RecreatedLayerDisplayName">
+            <English>Recreated</English>
+            <Russian>Воссоздано</Russian>
         </Key>
     </Package>
 </Project>

@@ -69,5 +69,21 @@
             <English>Units count</English>
             <Russian>Количество юнитов</Russian>
         </Key>
+        <Key ID="STR_Tools_Briefing_VehicleName">
+            <English>Vehicle name</English>
+            <Russian>Название техники</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_Color">
+            <English>Color</English>
+            <Russian>Цвет</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_ColorGrey">
+            <English>Grey</English>
+            <Russian>Серый</Russian>
+        </Key>
+        <Key ID="STR_Tools_Briefing_ColorOrange">
+            <English>Orange</English>
+            <Russian>Оранжевый</Russian>
+        </Key>
     </Package>
 </Project>

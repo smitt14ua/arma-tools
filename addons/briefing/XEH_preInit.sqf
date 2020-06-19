@@ -6,6 +6,7 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
+GVAR(buildingMarkers) = [];
 GVAR(unitMarkers) = [];
 GVAR(groupMarkers) = [];
 GVAR(vehicleMarkers) = [];

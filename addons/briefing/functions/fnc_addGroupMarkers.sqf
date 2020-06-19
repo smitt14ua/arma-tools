@@ -11,9 +11,9 @@ params [["_showName", false, [true]], ["_showCount", false, [true]], ["_alpha", 
 ISNILS(GVAR(groupMarkers),[]);
 
 {
-    private _marker = str _x;
+    private _marker = "group_" + str _x;
 
-    // Обновить маркер, если уже существует
+    // Удалить маркер, если уже существует
     if (_marker in GVAR(groupMarkers)) then {deleteMarkerLocal _marker};
 
     createMarkerLocal [_marker, getPosWorld leader _x];
@@ -48,7 +48,7 @@ ISNILS(GVAR(groupMarkers),[]);
 
     // Название группы
     if (_showName) then {
-        _name = groupId _x;
+        private _name = groupId _x;
         // Пробел в конце для разделения названия и кол-ва людей
         _text = (_text + _name + " ");
         _marker setMarkerTextLocal _text;
@@ -56,7 +56,7 @@ ISNILS(GVAR(groupMarkers),[]);
 
     // Кол-во членов группы
     if (_showCount) then {
-        _count = count units _x;
+        private _count = count units _x;
         _text = _text + format ["(x%1)", _count];
         _marker setMarkerTextLocal _text;
     };

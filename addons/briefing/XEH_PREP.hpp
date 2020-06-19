@@ -1,7 +1,13 @@
+PREP(addBuildingMarkers);
+PREP(addBuildingMarkersSettings);
 PREP(addGroupMarkers);
 PREP(addGroupMarkersSettings);
+PREP(addVehicleMarkers);
+PREP(addVehicleMarkersSettings);
 PREP(addUnitMarkers);
 PREP(addUnitMarkersSettings);
+PREP(deleteBuildingMarkers);
 PREP(deleteGroupMarkers);
+PREP(deleteVehicleMarkers);
 PREP(deleteUnitMarkers);
 PREP(getMarkersRecordText);

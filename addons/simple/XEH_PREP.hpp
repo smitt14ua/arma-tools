@@ -5,3 +5,5 @@ PREP(convertAllButSelected);
 PREP(convertSelected);
 PREP(copyConversionLatest);
 PREP(copyConversions);
+PREP(createEntities);
+PREP(createEntitiesMessage);

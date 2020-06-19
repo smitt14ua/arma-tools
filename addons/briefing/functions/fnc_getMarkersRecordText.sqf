@@ -17,14 +17,15 @@ ISNILS(GVAR(groupMarkers_alpha),1);
 ISNILS(GVAR(vehicleMarkers_showName),true);
 ISNILS(GVAR(vehicleMarkers_alpha),1);
 
+ISNILS(GVAR(buildingMarkers_color),0);
+ISNILS(GVAR(buildingMarkers_alpha),1);
+
 private _xml = "";
 
-// Юниты
-
+// # Юниты #
 _xml = _xml + "<font size=16>" + LLSTRING(Units) + "</font><br/>";
 
 // Показывать роль (юнитов)
-
 _xml = _xml + format ["<font color='#99cccc'>%1</font>: ", LLSTRING(UnitRoleDesc)];
 
 if (GVAR(unitMarkers_showRole)) then {
@@ -50,7 +51,6 @@ if (GVAR(unitMarkers_showRole)) then {
 };
 
 // Показывать группу (юнитов)
-
 _xml = _xml + format ["<font color='#99cccc'>%1</font>: ", LLSTRING(GroupName)];
 
 if (GVAR(unitMarkers_showGroup)) then {
@@ -76,7 +76,6 @@ if (GVAR(unitMarkers_showGroup)) then {
 };
 
 // Прозрачность (юнитов)
-
 _xml = _xml + format ["<font color='#99cccc'>%1</font>: ", LLSTRING(Opacity)];
 
 if (GVAR(unitMarkers_alpha) > 0.4) then {
@@ -102,7 +101,6 @@ if (GVAR(unitMarkers_alpha) > 0.4) then {
 };
 
 // Переключить видимость (юнитов)
-
 _xml = _xml + format ["<font color='#99cccc'>%1</font>: ", LLSTRING(Visibility)];
 
 if (IS_EMPTY(GVAR(unitMarkers))) then {
@@ -121,19 +119,17 @@ if (IS_EMPTY(GVAR(unitMarkers))) then {
     ];
 };
 
-// Группы
-
+// # Группы #
 _xml = _xml + "<font size=16>" + LLSTRING(Groups) + "</font><br/>";
 
 // Показывать имя (групп)
-
 _xml = _xml + format ["<font color='#99cccc'>%1</font>: ", LLSTRING(GroupName)];
 
 if (GVAR(groupMarkers_showName)) then {
     _xml = _xml + format [
         "<execute expression='%1 = false; %2[""%3""] call CBA_fnc_localEvent;'>%4</execute><br/>",
         QGVAR(groupMarkers_showName),
-        (if (IS_EMPTY(GVAR(GroupMarkers))) then {""} else {
+        (if (IS_EMPTY(GVAR(groupMarkers))) then {""} else {
             format ["[] call %1;", QFUNC(addGroupMarkersSettings)]
         }),
         QGVAR(updateMarkersDiary),
@@ -143,7 +139,7 @@ if (GVAR(groupMarkers_showName)) then {
     _xml = _xml + format [
         "<execute expression='%1 = true; %2[""%3""] call CBA_fnc_localEvent;'>%4</execute><br/>",
         QGVAR(groupMarkers_showName),
-        (if (IS_EMPTY(GVAR(GroupMarkers))) then {""} else {
+        (if (IS_EMPTY(GVAR(groupMarkers))) then {""} else {
             format ["[] call %1;", QFUNC(addGroupMarkersSettings)]
         }),
         QGVAR(updateMarkersDiary),
@@ -152,7 +148,6 @@ if (GVAR(groupMarkers_showName)) then {
 };
 
 // Показывать кол-во людей (групп)
-
 _xml = _xml + format ["<font color='#99cccc'>%1</font>: ", LLSTRING(UnitsCount)];
 
 if (GVAR(groupMarkers_showCount)) then {
@@ -169,7 +164,7 @@ if (GVAR(groupMarkers_showCount)) then {
     _xml = _xml + format [
         "<execute expression='%1 = true; %2[""%3""] call CBA_fnc_localEvent;'>%4</execute><br/>",
         QGVAR(groupMarkers_showCount),
-        (if (IS_EMPTY(GVAR(GroupMarkers))) then {""} else {
+        (if (IS_EMPTY(GVAR(groupMarkers))) then {""} else {
             format ["[] call %1;", QFUNC(addGroupMarkersSettings)]
         }),
         QGVAR(updateMarkersDiary),
@@ -178,7 +173,6 @@ if (GVAR(groupMarkers_showCount)) then {
 };
 
 // Прозрачность (групп)
-
 _xml = _xml + format ["<font color='#99cccc'>%1</font>: ", LLSTRING(Opacity)];
 
 if (GVAR(groupMarkers_alpha) > 0.4) then {
@@ -204,7 +198,6 @@ if (GVAR(groupMarkers_alpha) > 0.4) then {
 };
 
 // Переключить видимость (групп)
-
 _xml = _xml + format ["<font color='#99cccc'>%1</font>: ", LLSTRING(Visibility)];
 
 if (IS_EMPTY(GVAR(groupMarkers))) then {
@@ -223,19 +216,17 @@ if (IS_EMPTY(GVAR(groupMarkers))) then {
     ];
 };
 
-// Техника
-
+// # Техника #
 _xml = _xml + "<font size=16>" + LLSTRING(Vehicles) + "</font><br/>";
 
 // Показывать название (техники)
-
 _xml = _xml + format ["<font color='#99cccc'>%1</font>: ", LLSTRING(VehicleName)];
 
 if (GVAR(vehicleMarkers_showName)) then {
     _xml = _xml + format [
         "<execute expression='%1 = false; %2[""%3""] call CBA_fnc_localEvent;'>%4</execute><br/>",
         QGVAR(vehicleMarkers_showName),
-        (if (IS_EMPTY(GVAR(VehicleMarkers))) then {""} else {
+        (if (IS_EMPTY(GVAR(vehicleMarkers))) then {""} else {
             format ["[] call %1;", QFUNC(addVehicleMarkersSettings)]
         }),
         QGVAR(updateMarkersDiary),
@@ -245,7 +236,7 @@ if (GVAR(vehicleMarkers_showName)) then {
     _xml = _xml + format [
         "<execute expression='%1 = true; %2[""%3""] call CBA_fnc_localEvent;'>%4</execute><br/>",
         QGVAR(vehicleMarkers_showName),
-        (if (IS_EMPTY(GVAR(VehicleMarkers))) then {""} else {
+        (if (IS_EMPTY(GVAR(vehicleMarkers))) then {""} else {
             format ["[] call %1;", QFUNC(addVehicleMarkersSettings)]
         }),
         QGVAR(updateMarkersDiary),
@@ -254,14 +245,13 @@ if (GVAR(vehicleMarkers_showName)) then {
 };
 
 // Прозрачность (техники)
-
 _xml = _xml + format ["<font color='#99cccc'>%1</font>: ", LLSTRING(Opacity)];
 
 if (GVAR(vehicleMarkers_alpha) > 0.4) then {
     _xml = _xml + format [
         "<execute expression='%1 = 0.4; %2[""%3""] call CBA_fnc_localEvent;'>%4</execute><br/>",
         QGVAR(vehicleMarkers_alpha),
-        (if (IS_EMPTY(GVAR(VehicleMarkers))) then {""} else {
+        (if (IS_EMPTY(GVAR(vehicleMarkers))) then {""} else {
             format ["[] call %1;", QFUNC(addVehicleMarkersSettings)]
         }),
         QGVAR(updateMarkersDiary),
@@ -271,7 +261,7 @@ if (GVAR(vehicleMarkers_alpha) > 0.4) then {
     _xml = _xml + format [
         "<execute expression='%1 = 1; %2[""%3""] call CBA_fnc_localEvent;'>%4</execute><br/>",
         QGVAR(vehicleMarkers_alpha),
-        (if (IS_EMPTY(GVAR(VehicleMarkers))) then {""} else {
+        (if (IS_EMPTY(GVAR(vehicleMarkers))) then {""} else {
             format ["[] call %1;", QFUNC(addVehicleMarkersSettings)]
         }),
         QGVAR(updateMarkersDiary),
@@ -280,10 +270,9 @@ if (GVAR(vehicleMarkers_alpha) > 0.4) then {
 };
 
 // Переключить видимость (техники)
-
 _xml = _xml + format ["<font color='#99cccc'>%1</font>: ", LLSTRING(Visibility)];
 
-if (IS_EMPTY(GVAR(VehicleMarkers))) then {
+if (IS_EMPTY(GVAR(vehicleMarkers))) then {
     _xml = _xml + format [
         "<execute expression='[] call %1; [""%2""] call CBA_fnc_localEvent;'>%3</execute><br/>",
         QFUNC(addVehicleMarkersSettings),
@@ -294,6 +283,78 @@ if (IS_EMPTY(GVAR(VehicleMarkers))) then {
     _xml = _xml + format [
         "<execute expression='[] call %1; [""%2""] call CBA_fnc_localEvent;'>%3</execute><br/>",
         QFUNC(deleteVehicleMarkers),
+        QGVAR(updateMarkersDiary),
+        LLSTRING(Hide)
+    ];
+};
+
+// # Постройки #
+_xml = _xml + "<font size=16>" + LLSTRING(Buildings) + "</font><br/>";
+
+// Цвет (построек)
+_xml = _xml + format ["<font color='#99cccc'>%1</font>: ", LLSTRING(Color)];
+
+if (GVAR(buildingMarkers_color) isEqualTo 0) then {
+    _xml = _xml + format [
+        "<execute expression='%1 = 1; %2[""%3""] call CBA_fnc_localEvent;'>%4</execute><br/>",
+        QGVAR(buildingMarkers_color),
+        (if (IS_EMPTY(GVAR(buildingMarkers))) then {""} else {
+            format ["[] call %1;", QFUNC(addBuildingMarkersSettings)]
+        }),
+        QGVAR(updateMarkersDiary),
+        LLSTRING(ColorOrange)
+    ];
+} else {
+    _xml = _xml + format [
+        "<execute expression='%1 = 0; %2[""%3""] call CBA_fnc_localEvent;'>%4</execute><br/>",
+        QGVAR(buildingMarkers_color),
+        (if (IS_EMPTY(GVAR(buildingMarkers))) then {""} else {
+            format ["[] call %1;", QFUNC(addBuildingMarkersSettings)]
+        }),
+        QGVAR(updateMarkersDiary),
+        LLSTRING(ColorGrey)
+    ];
+};
+
+// Прозрачность (построек)
+_xml = _xml + format ["<font color='#99cccc'>%1</font>: ", LLSTRING(Opacity)];
+
+if (GVAR(buildingMarkers_alpha) > 0.4) then {
+    _xml = _xml + format [
+        "<execute expression='%1 = 0.4; %2[""%3""] call CBA_fnc_localEvent;'>%4</execute><br/>",
+        QGVAR(buildingMarkers_alpha),
+        (if (IS_EMPTY(GVAR(buildingMarkers))) then {""} else {
+            format ["[] call %1;", QFUNC(addBuildingMarkersSettings)]
+        }),
+        QGVAR(updateMarkersDiary),
+        LLSTRING(Half)
+    ];
+} else {
+    _xml = _xml + format [
+        "<execute expression='%1 = 1; %2[""%3""] call CBA_fnc_localEvent;'>%4</execute><br/>",
+        QGVAR(buildingMarkers_alpha),
+        (if (IS_EMPTY(GVAR(buildingMarkers))) then {""} else {
+            format ["[] call %1;", QFUNC(addBuildingMarkersSettings)]
+        }),
+        QGVAR(updateMarkersDiary),
+        LLSTRING(Full)
+    ];
+};
+
+// Переключить видимость (построек)
+_xml = _xml + format ["<font color='#99cccc'>%1</font>: ", LLSTRING(Visibility)];
+
+if (IS_EMPTY(GVAR(buildingMarkers))) then {
+    _xml = _xml + format [
+        "<execute expression='[] call %1; [""%2""] call CBA_fnc_localEvent;'>%3</execute><br/>",
+        QFUNC(addBuildingMarkersSettings),
+        QGVAR(updateMarkersDiary),
+        LLSTRING(Show)
+    ];
+} else {
+    _xml = _xml + format [
+        "<execute expression='[] call %1; [""%2""] call CBA_fnc_localEvent;'>%3</execute><br/>",
+        QFUNC(deleteBuildingMarkers),
         QGVAR(updateMarkersDiary),
         LLSTRING(Hide)
     ];

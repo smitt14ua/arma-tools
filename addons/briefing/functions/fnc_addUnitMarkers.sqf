@@ -11,9 +11,9 @@ params [["_showRole", false, [true]], ["_showGroup", false, [true]], ["_alpha", 
 ISNILS(GVAR(unitMarkers),[]);
 
 {
-    private _marker = str _x;
+    private _marker = "unit_" + str _x;
 
-    // Обновить маркер, если уже существует
+    // Удалить маркер, если уже существует
     if (_marker in GVAR(unitMarkers)) then {deleteMarkerLocal _marker};
 
     createMarkerLocal [_marker, getPosWorld _x];
@@ -48,7 +48,7 @@ ISNILS(GVAR(unitMarkers),[]);
 
     // Название группы
     if (_showGroup) then {
-        _groupName = groupId (group _x);
+        private _groupName = groupId (group _x);
         // Пробел в конце для разделения группы и роли
         _text = (_text + _groupName + " ");
         _marker setMarkerTextLocal _text;
@@ -56,7 +56,7 @@ ISNILS(GVAR(unitMarkers),[]);
 
     // Номер в группе и роль игрока
     if (_showRole) then {
-        _name = roleDescription _x;
+        private _name = roleDescription _x;
         if (_name == "") then {
             _name = getText (configfile >> "CfgVehicles" >> (typeOf _x) >> "displayName");
         };

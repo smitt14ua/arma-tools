@@ -6,10 +6,36 @@
 
 params [["_showName", false, [true]], ["_alpha", 1, [0]]];
 
-{
-    private _marker = str _x;
+// Инициализируем массив маркеров
+// Создаём, если его еще не существует
+ISNILS(GVAR(vehicleMarkers),[]);
 
-    // Обновить маркер, если уже существует
+private _objects= [];
+
+{
+    private _object = _x;
+    {
+        if (_object isKindOf _x) then {
+            _objects pushBack _object;
+        };
+    } forEach [
+        "Car",
+        "Helicopter",
+        "Motorcycle",
+        "Plane",
+        "Ship",
+        "StaticWeapon",
+        "Submarine",
+        "TrackedAPC",
+        "Tank",
+        "WheeledAPC"
+    ];
+} forEach allMissionObjects "";
+
+{
+    private _marker = "vehicle_" + str _x;
+
+    // Удалить маркер, если уже существует
     if (_marker in GVAR(vehicleMarkers)) then {deleteMarkerLocal _marker};
 
     createMarkerLocal [_marker, getPosWorld _x];
@@ -25,7 +51,7 @@ params [["_showName", false, [true]], ["_alpha", 1, [0]]];
 
     // Название техники
     if (_showName) then {
-        _name = getText (configfile >> "CfgVehicles" >> (typeOf _x) >> "displayName");
+        private _name = getText (configfile >> "CfgVehicles" >> (typeOf _x) >> "displayName");
         _text = _text + _name;
         _marker setMarkerTextLocal _text;
     };
