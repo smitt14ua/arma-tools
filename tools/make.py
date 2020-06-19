@@ -72,7 +72,7 @@ dssignfile = ""
 prefix = "tools"
 pbo_name_prefix = "tools_"
 signature_blacklist = []
-importantFiles = ["mod.cpp", "meta.cpp"]
+importantFiles = ["mod.cpp", "meta.cpp", "logo_ca.paa", "logo_small_ca.paa", "picture_ca.paa"]
 versionFiles = ["mod.cpp"]
 
 ciBuild = False # Used for CI builds
