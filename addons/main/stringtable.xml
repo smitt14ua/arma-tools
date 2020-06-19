@@ -18,11 +18,11 @@
         </Key>
         <Key ID="STR_Tools_Main_Name">
             <English>Smith's tools</English>
-            <Russian>Инструмента Смита</Russian>
+            <Russian>Инструменты Смита</Russian>
         </Key>
         <Key ID="STR_Tools_Main_Description">
-            <English>Tools for working with the 3DEN editor and planning.</English>
-            <Russian>Инструменты для работы с 3DEN редактором и брифингом.</Russian>
+            <English>Tools for working with the editor and briefing.</English>
+            <Russian>Инструменты для работы с редактором и брифингом.</Russian>
         </Key>
     </Package>
 </Project>
