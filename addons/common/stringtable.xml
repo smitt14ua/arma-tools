@@ -5,6 +5,10 @@
             <English>Value</English>
             <Russian>Значение</Russian>
         </Key>
+        <Key ID="STR_Tools_Common_Diary">
+            <English>Tools</English>
+            <Russian>Инструменты</Russian>
+        </Key>
         <Key ID="STR_Tools_Common_Yes">
             <English>Yes</English>
             <Russian>Да</Russian>

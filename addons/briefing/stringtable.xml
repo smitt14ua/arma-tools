@@ -5,10 +5,6 @@
             <English>Value</English>
             <Russian>Значение</Russian>
         </Key>
-        <Key ID="STR_Tools_Briefing_DiaryDisplayName">
-            <English>Tools</English>
-            <Russian>Инструменты</Russian>
-        </Key>
         <Key ID="STR_Tools_Briefing_DiaryMarkersDisplayName">
             <English>Markers</English>
             <Russian>Маркеры</Russian>
