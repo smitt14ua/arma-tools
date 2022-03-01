@@ -18,7 +18,7 @@
         </Key>
         <Key ID="STR_Tools_Main_Name">
             <English>Smith's tools</English>
-            <Russian>Инструмента Смита</Russian>
+            <Russian>Инструменты Смита</Russian>
         </Key>
         <Key ID="STR_Tools_Main_Description">
             <English>Tools for working with the 3DEN editor and planning.</English>

@@ -5,17 +5,19 @@
     Только сообщение с подтверждением действия.
 ---------------------------------------------------------------------------- */
 
-[
-    LLSTRING(WarningBeforeCreating),
-    LLSTRING(CreateFromClipboad),
-    [
-        LELSTRING(Common,Yes),
-        {
-            call FUNC(createEntities);
-        }
-    ],
-    [
-        LELSTRING(Common,No),
-        {}
-    ]
-] call BIS_fnc_3DENShowMessage;
+["В связи с оккупацией Украины солдатами РФ работа данного аддона временно прекращена.", "Работа прекращена", "Нет войне!", false] call BIS_fnc_3DENShowMessage;
+
+// [
+//     LLSTRING(WarningBeforeCreating),
+//     LLSTRING(CreateFromClipboad),
+//     [
+//         LELSTRING(Common,Yes),
+//         {
+//             call FUNC(createEntities);
+//         }
+//     ],
+//     [
+//         LELSTRING(Common,No),
+//         {}
+//     ]
+// ] call BIS_fnc_3DENShowMessage;

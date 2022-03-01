@@ -12,9 +12,9 @@ import subprocess
 import winreg
 
 ######## GLOBALS #########
-MAINDIR = "z"
-PROJECTDIR = "ace"
-CBA = "P:\\x\\cba"
+MAINDIR = "s"
+PROJECTDIR = "tools"
+CBA = "P:\\s\\tools"
 ##########################
 
 def main():

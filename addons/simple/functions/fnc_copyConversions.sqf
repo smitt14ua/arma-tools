@@ -4,8 +4,10 @@
     Скопировать код всех конвертаций.
 ---------------------------------------------------------------------------- */
 
-private _code = uiNamespace getVariable [QGVAR(conversions), ""];
+["В связи с оккупацией Украины солдатами РФ работа данного аддона временно прекращена.", "Работа прекращена", "Нет войне!", false] call BIS_fnc_3DENShowMessage;
 
-copyToClipboard _code;
+// private _code = uiNamespace getVariable [QGVAR(conversions), ""];
 
-[LLSTRING(Copied)] call BIS_fnc_3DENNotification;
+// copyToClipboard _code;
+
+// [LLSTRING(Copied)] call BIS_fnc_3DENNotification;
